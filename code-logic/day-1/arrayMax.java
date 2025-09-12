@@ -1,13 +1,12 @@
-class ArrayMax {
+class arrayMax {
     public static Integer Max(int arr[]) {
-        if (arr.length == 0 ) {
-            return null;
-        }
+        if (arr.length == 0 ) return null;
+
         int max = arr[0];
         int i = 1;
 
-        while (i <= arr.length) { 
-            if (arr[i] > max) {
+        while (i < arr.length) { 
+            if(arr[i] >= max) {
                 max = arr[i];
             }
             i++;
@@ -15,7 +14,7 @@ class ArrayMax {
         return max;
     }
     public static void main(String[] args) {
-        int arr1[] = {3,2,1,9};
+        int arr1[] = {7};
         System.out.print(Max(arr1));
     }
 }
