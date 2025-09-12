@@ -5,6 +5,7 @@ public class elementSearch {
 
         while (i < arr.length) {
             if(arr[i] == target) return i;
+            i++;
         }
         return -1;
     }
